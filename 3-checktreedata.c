@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+   
 #define STACK_SIZE 100
 
 typedef struct TreeNode {
@@ -11,7 +11,7 @@ typedef struct TreeNode {
 
 typedef struct {
     TreeNode* node;
-    int depth; // ±íÀÌ¸¦ ÀúÀå
+    int depth; 
 } StackItem;
 
 typedef struct {
@@ -38,7 +38,7 @@ void Push(StackType* s, TreeNode* p, int depth) {
     }
     else {
         s->data[++(s->top)].node = p;
-        s->data[s->top].depth = depth; // ±íÀÌ ÀúÀå
+        s->data[s->top].depth = depth; 
     }
 }
 
@@ -109,7 +109,7 @@ void GetSumOfNodes(TreeNode* root) {
         if (node->right) Push(&stack, node->right, item.depth + 1);
         if (node->left) Push(&stack, node->left, item.depth + 1);
     }
-    printf("Sum of all nodes: %d\n", sum);
+    printf("Sum of nodes: %d\n", sum);
     
 
 }
@@ -139,7 +139,7 @@ void GetHeightOfTree(TreeNode* root) {
 
     StackType stack;
     Init(&stack);
-    Push(&stack, root, 1); // ·çÆ® ³ëµå¿Í ±íÀÌ 1À» Çª½Ã
+    Push(&stack, root, 1); 
 
     int height = 0;
 
@@ -148,12 +148,12 @@ void GetHeightOfTree(TreeNode* root) {
         TreeNode* node = item.node;
         int currentDepth = item.depth;
 
-        // ÇöÀç ±íÀÌ ¾÷µ¥ÀÌÆ®
+        
         if (currentDepth > height) {
             height = currentDepth;
         }
 
-        // ¿À¸¥ÂÊ ÀÚ½ÄÀ» ¸ÕÀú Çª½Ã
+        // ì˜¤ë¥¸ìª½ ìžì‹ì„ ë¨¼ì € í‘¸ì‹œ
         if (node->right) {
             Push(&stack, node->right, currentDepth + 1);
         }
