@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-   
+
 #define STACK_SIZE 100
 
 typedef struct TreeNode {
@@ -110,7 +110,7 @@ void GetSumOfNodes(TreeNode* root) {
         if (node->left) Push(&stack, node->left, item.depth + 1);
     }
     printf("Sum of nodes: %d\n", sum);
-    
+
 
 }
 
@@ -153,7 +153,7 @@ void GetHeightOfTree(TreeNode* root) {
             height = currentDepth;
         }
 
-        // 오른쪽 자식을 먼저 푸시
+        
         if (node->right) {
             Push(&stack, node->right, currentDepth + 1);
         }
@@ -184,7 +184,7 @@ void GetNumberOfLeafNodes(TreeNode* root) {
         if (node->left) Push(&stack, node->left, item.depth + 1);
     }
 
-   
+
     printf("Number of leaf nodes: %d\n", leafCount);
 
 }
