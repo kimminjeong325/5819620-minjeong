@@ -153,7 +153,7 @@ void GetHeightOfTree(TreeNode* root) {
             height = currentDepth;
         }
 
-        
+     
         if (node->right) {
             Push(&stack, node->right, currentDepth + 1);
         }
