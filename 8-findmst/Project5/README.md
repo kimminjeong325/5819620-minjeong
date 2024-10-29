@@ -1,2 +1,2 @@
-#FindMst{Result Image}
+# FindMst{Result Image}
 ![](./image5.png)
