@@ -1,2 +1,2 @@
 # dijksta {Result Image}
-![](./image.png)
+![](./image7.png)
