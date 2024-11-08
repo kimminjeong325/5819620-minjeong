@@ -1,2 +1,2 @@
-# dijkstara {Result Image}
-![]()(./image7.png)
+# dijksta {Result Image}
+![](./image.png)
