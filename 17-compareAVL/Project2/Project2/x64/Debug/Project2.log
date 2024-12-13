@@ -1,0 +1,5 @@
+﻿  17-compareAVL.c
+C:\Cook\Project2\Project2\17-compareAVL.c(321,11): warning C4244: '함수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Cook\Project2\Project2\17-compareAVL.c(335,33): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Cook\Project2\Project2\17-compareAVL.c(338,23): warning C4133: '함수': 'Node *'과(와) 'TreeNode *' 사이의 형식이 호환되지 않습니다.
+  Project2.vcxproj -> C:\Cook\Project2\x64\Debug\Project2.exe
